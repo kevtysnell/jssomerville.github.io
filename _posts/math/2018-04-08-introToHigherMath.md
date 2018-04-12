@@ -91,7 +91,7 @@ $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R} \subset \mathbb{C}$$
 There's a lot more to know about sets, but this page isn't about teaching everything about set theory. I'll give you more information about it somewhere else.
 
 ## Quantifiers
-Quantifiers were invented by mathematicians so they wouldn't have to write a bunch of words down when they were explaining things. At first, most people find them to be a little strange, but after you get used to them they make life a lot easier. There are two important ones: $$\exists$$ and $$\forall$$. $$\exists$$ means "there exists", and we call it the *Existential Quantifier*. $$\forall$$ means "for all" or "for every", and we call it the *Universal Quantifier*. Basically, we can use these to make more interesting mathematical statements. For example we can write things like $$\forall x \in \mathbb{Q} \,\,\, where \,\,\, x \neq 0 \;\; then \exists y \in \mathbb{Q} such that \frac{x}{y} = 1$$. Basically, we've got a statement that says every rational number other than $$0$$ can be divided by another rational number so that you get $$1$$. We can put a slash through $$\exists$$ too, so we have $$\not \exists$$ ("there does not exist"). $$\not \forall$$ doesn't really come up, because it pretty much means "The opposite pf the following statement is true for all...", and that's kind of clunky to work with. 
+Quantifiers were invented by mathematicians so they wouldn't have to write a bunch of words down when they were explaining things. At first, most people find them to be a little strange, but after you get used to them they make life a lot easier. There are two important ones: $$\exists$$ and $$\forall$$. $$\exists$$ means "there exists", and we call it the *Existential Quantifier*. $$\forall$$ means "for all" or "for every", and we call it the *Universal Quantifier*. Basically, we can use these to make more interesting mathematical statements. For example we can write things like $$\forall x \in \mathbb{Q} \,\,\, where \,\,\, x \neq 0 \;\; then \exists y \in \mathbb{Q} \,\,\,such\;that\,\,\, \frac{x}{y} = 1$$. Basically, we've got a statement that says every rational number other than $$0$$ can be divided by another rational number so that you get $$1$$. We can put a slash through $$\exists$$ too, so we have $$\not \exists$$ ("there does not exist"). $$\not \forall$$ doesn't really come up, because it pretty much means "The opposite pf the following statement is true for all...", and that's kind of clunky to work with. 
 
 Often times, the english words in the statements will get left out. For the statement above, we could simply write:
 $$\forall x \in \mathbb{Q},\; x \neq 0, \; \exists y \in \mathbb{Q}, \frac{x}{y} = 1$$
@@ -104,7 +104,7 @@ Let A be the set of all odd integers. $$\forall x \in A,\; \exists n \in \mathbb
 $$\forall x \in \mathbb{R}, \; \exists y \in \mathbb{R} \,\,\, such\;that\,\,\, x=y^2$$
 $$\exists x \in mathbb{R}, \,\,\,such\;that\,\,\, \forall y \in mathbb{R}, \; x = y^2$$
 $$\forall x,y \in \mathbb{R},\; \exists z \in \mathbb{R} \,\,\,such\;that\,\,\, x^2 + y^2 = z$$
-$$\exists x, y, z \in mathbb{Z}\,\,\, such\;that\,\,\, x^2+y^2=z^2$$
+$$\exists x, y, z \in \mathbb{Z}\,\,\, such\;that\,\,\, x^2+y^2=z^2$$
 $$\forall x,y \in \mathbb{z},\; \exists z \in \mathbb{z} \,\,\,such\;that\,\,\, x^2 + y^2 = z^2$$
 
 If you understand the statements above, then you at least have a working understanding of the Existential and Universal Quantifier.
@@ -121,9 +121,9 @@ Sometimes people use the parentheses, sometimes they don't. It's a matter of pre
 $$6 \mod 5 \equiv 7 \mod 3$$
 $$\frac{6}{5}$$ has a remainder of 1, and $$\frac{7}{3}$$ has a remainder of 1, so we can say they're congruent. There's a bit more to modular arithmetic, but I'm not going to cover that here.
 
-2. Divides: "|"
+2. Divides: "$$|$$"
 
-So, we talked about "|" when working with set builder notation above. But, the it also gets use as a symbol meaning "divisible by". So, we can write something like $$ 3 | 6$$. This means 3 divides 6 evenly (with no remainder). We can also write $$3 \not | 7$$. This generally is only used in reference to integers, but it also comes up in reference to polynomials and some other mathematical objects. One more example: $$ x, y \in \mathbb{Z} \,\,\, where \,\,\, x=2y, \; then\,\,\, 2|x$$
+So, we talked about "$$|$$" when working with set builder notation above. But, the it also gets use as a symbol meaning "divisible by". So, we can write something like $$ 3 | 6$$. This means 3 divides 6 evenly (with no remainder). We can also write $$3 \not | 7$$. This generally is only used in reference to integers, but it also comes up in reference to polynomials and some other mathematical objects. One more example: $$ x, y \in \mathbb{Z} \,\,\, where \,\,\, x=2y, \; then\,\,\, 2|x$$
 
 3. Ceiling "$$\lceil\,\,\rceil$$" and Floor "$$\lfloor\,\,\rfloor$$"
 
