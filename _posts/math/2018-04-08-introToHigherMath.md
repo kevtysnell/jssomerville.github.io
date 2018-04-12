@@ -113,7 +113,7 @@ If you understand the statements above, then you at least have a working underst
 
 There are a lot of symbols, operations and functions used in math that someone without formal math knowledge might not recognize. You've probably heard of these things, and maybe seen them written in a different way, but this is how they are often addressed in proofs and mathematical texts.
 
-* Modulo
+#### Modulo
 
 Modulo basically just gives the remainder of a division problem. If you've done some programming, then you know about it. In math, we have some specific symbology. Let's say we want to write that the remainder of 7 divided by 3 is equal to 1. It would look something like this:
 $$1 \equiv 7 (\pmod 3)$$ or $$1 \equiv 7 \mod 3$$
@@ -121,19 +121,19 @@ Sometimes people use the parentheses, sometimes they don't. It's a matter of pre
 $$6 \mod 5 \equiv 7 \mod 3$$
 $$\frac{6}{5}$$ has a remainder of 1, and $$\frac{7}{3}$$ has a remainder of 1, so we can say they're congruent. There's a bit more to modular arithmetic, but I'm not going to cover that here.
 
-* Divides: "&#124;"
+#### Divides: "&#124;"
 
-So, we talked about "&#124;" when working with set builder notation above. But, the it also gets use as a symbol meaning "divisible by". So, we can write something like $$ 3$$ &#124; $$6$$. This means 3 divides 6 evenly (with no remainder). We can also write $$3 \vert \not  7$$. This generally is only used in reference to integers, but it also comes up in reference to polynomials and some other mathematical objects. One more example: $$ x, y \in \mathbb{Z} \,\,\, where \,\,\, x=2y, \; then\,\,\, 2 \vert x$$
+So, we talked about "&#124;" when working with set builder notation above. But, the it also gets use as a symbol meaning "divisible by". So, we can write something like $$ 3$$ &#124; $$6$$. This means 3 divides 6 evenly (with no remainder). We can also write $$3 \not |  7$$. This generally is only used in reference to integers, but it also comes up in reference to polynomials and some other mathematical objects. One more example: $$ x, y \in \mathbb{Z} \,\,\, where \,\,\, x=2y, \; then\,\,\, 2 \vert x$$
 
-* Ceiling "$$\lceil\,\,\rceil$$" and Floor "$$\lfloor\,\,\rfloor$$"
+#### Ceiling "$$\lceil\,\,\rceil$$" and Floor "$$\lfloor\,\,\rfloor$$"
 
 The ceiling function gives the nearest integer greater than the input number. For example, $$\lceil 2.01\rceil=3$$. The floor function gives the nearest integer less than the input number. So, $$\lfloor2.99\rfloor=2$$.
 
-* Function Notation
+#### Function Notation
 
 You're probably used to seeing a function written as $$f(x) = x$$. But, to rigorously define a function, we also have to give the sets corresponding to its domain and codomain. So, we have a little more symbology. If we have a function $$f$$ we want to map from a set $$A$$ to a set $$B$$ (when I say map, I mean that we give each element in the set $$A$$ and value in the codomain $$B$$), we would write $$f: A \rightarrow B$$. Next, we would define our function. So, in total it looks something like this: $$f:A\rightarrow B, f(x) = x$$. If, for example, we wanted to map the real numbers to the real numbers, we would write: $$f:\mathbb{R}\rightarrow\mathbb{R}, f(x) = x$$ (giving us the standard linear function we all know and love).  
 
-* Function Composition $$(f\circg)(x)
+#### Function Composition $$(f\circg)(x)
 
 The little circle is the symbol for function composition. It indicates that you take the output of the function to the right and pass it as the input of the function to the left. So, the input is from the domain of rightmost function, and the output is from the codomain of the leftmost function. Say we have two functions, one that maps from the integers to the positive square roots of the integers, called $$g$$, and one that maps from the positive square roots of the integers back to the integers, called $$f$$. The first thing we would do is define a set of the positive square roots of all the integers. We'll call that set $$S$$, then $$S = \{x \in \mathbb{R} | x = \sqrt{y}\,\,\forally\in\mathbb{Z}\}$$. Now, we can write the following functions: $$f:S\rightarrow\mathbb{Z}, f(x)=x^2$$ and $$g:mathbb{Z}\rightarrow S, g(x)=\sqrt{x}$$. Using these we can define the function $$f\circ g:\mathbb{Z}\rightarrow\mathbb{Z}, (f \circ g)(x) = (\sqrt{x})^2 = x$$. Notice that we applied the rightmost function first, and the leftmost function second. We can do this for longer strings of functions. For example: $$g\circ f \circ g:\mathbb{Z} \rightarrow S, (g\circ f \circ g)(x) = \sqrt{(\sqrt{x})^2}$$, which you can probably tell is equivalent to $$g$$. Notice how I have carefully defined the domains and codomains so that every element of the domain is used as an input, and the element of the codomain is used as an output. This is the standard for a proper function definition. Also, the unless given explicity, the square root function returns only positive values.
 
