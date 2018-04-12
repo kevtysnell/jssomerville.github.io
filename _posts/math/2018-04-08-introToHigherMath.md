@@ -121,9 +121,9 @@ Sometimes people use the parentheses, sometimes they don't. It's a matter of pre
 $$6 \mod 5 \equiv 7 \mod 3$$
 $$\frac{6}{5}$$ has a remainder of 1, and $$\frac{7}{3}$$ has a remainder of 1, so we can say they're congruent. There's a bit more to modular arithmetic, but I'm not going to cover that here.
 
-2. Divides: "\|"
+2. Divides: "&#124;"
 
-So, we talked about "\|" when working with set builder notation above. But, the it also gets use as a symbol meaning "divisible by". So, we can write something like $$ 3 | 6$$. This means 3 divides 6 evenly (with no remainder). We can also write $$3 \not | 7$$. This generally is only used in reference to integers, but it also comes up in reference to polynomials and some other mathematical objects. One more example: $$ x, y \in \mathbb{Z} \,\,\, where \,\,\, x=2y, \; then\,\,\, 2|x$$
+So, we talked about "&#124;" when working with set builder notation above. But, the it also gets use as a symbol meaning "divisible by". So, we can write something like $$ 3 | 6$$. This means 3 divides 6 evenly (with no remainder). We can also write $$3 \not | 7$$. This generally is only used in reference to integers, but it also comes up in reference to polynomials and some other mathematical objects. One more example: $$ x, y \in \mathbb{Z} \,\,\, where \,\,\, x=2y, \; then\,\,\, 2|x$$
 
 3. Ceiling "$$\lceil\,\,\rceil$$" and Floor "$$\lfloor\,\,\rfloor$$"
 
