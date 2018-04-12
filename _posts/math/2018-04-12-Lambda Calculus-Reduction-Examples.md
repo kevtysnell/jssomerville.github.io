@@ -1,5 +1,5 @@
 ---
-title: Lambda Calculus: Simple Reduction Examples
+title: Lambda Calculus Simple Reduction Examples
 heading: Lambda Calculus
 subheading: Simple Reduction Examples
 author: Bradley Post

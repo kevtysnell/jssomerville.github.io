@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Intro to Higher Math</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../../../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../../css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../../../../index.html">Hackney.cool</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../topics.html">Topics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../../../../img/george.png')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>Can You Take Me Higher</h1>
+              <h2>What you need to know to start tackling math beyond calculus</h2>
+              <span class="meta">Posted by Bradley Post on April 8, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p>So, you decided that there is some math you don’t know, that you should know. You looked it up and it’s just a mess of weird symbols and words like group and graph, and you know what those words mean normally, but it seems like these mathematicians have a whole different idea about what they mean. If I’m describing you, then you’ve come to the right place. This article is an attempt to explain the basics of mathematical notation and convention, so that you are able to look at a proof, and at the very least know what most of the symbols mean. There are three main topics I’ll cover:</p>
+<ul>
+  <li><strong>Sets</strong></li>
+  <li><strong>Quantifiers</strong>
+and</li>
+  <li><strong>Commonly</strong> <strong>used</strong> <strong>operations</strong> <strong>and</strong> <strong>functions</strong></li>
+</ul>
+
+<h2 id="sets">Sets</h2>
+<p>If you haven’t heard of a set before, then I’m surprised you ended up on a group theory tutorial. In any case, I’m going to explain sets and their notation in the interest of being comprehensive. A <em>set</em> is a collection of <em>elements</em>. Elements in a set have no structure whatsoever.They have no order. There is only one rule about the elements in a set, and that is that there cannot be any repeats. Every element in the set appears only once. There’s a handful of other rules about sets, but they won’t come up in what we’re doing.</p>
+
+<h5 id="unnecessary-but-interesting-background-information">Unnecessary but interesting background information</h5>
+<p>(You can skip this paragraph)
+Sets and set theory are the foundation of all mathematics. The way that we formally define them (generally this is done using <a href="https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory">ZFC</a>, but other ways of defining sets exist), likely has impact on what we can and cannot prove using mathematics (<a href="https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems">Gödel’s Incompleteness Theorems</a>). There was a general conception of sets among mathematicians since the Greeks, but the first bonafide set theorist is generally considered to be Georg Cantor (1845-1918). He has some of the most interesting, important, and accessible proofs in all of mathematics, most of which dealt with infinite sets (ex: <a href="https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument">Cantor’s Diagonal Argument</a>). At the turn of the 20th century, the mathematician/logician Bertrand Russell (1872-1970) found a problem with the way sets were defined (<a href="https://en.wikipedia.org/wiki/Russell%27s_paradox">Russell’s Paradox</a>) and basically broke math on the whole. That is the reason ZFC was developed. Overall, sets have an interesting mathematical history, and it’s certainly worth looking into if you’re interested.</p>
+
+<h5 id="back-to-the-action">Back to the action</h5>
+<p>Now that you have an idea of what sets are, let’s talk about how we write them down. The elements of a set are written inside a set of curly braces, like this:
+ A <script type="math/tex">\{1,2,3\}</script>
+This is the set containing the numbers 1, 2, and 3. But let’s say we want to give a bigger set, where it would be inconvienent to write down all the numbers. Then we can write:
+ B <script type="math/tex">\{1, 2, 3, ... , 57\}</script>
+Using the …, we basically are saying that the pattern at the beginning is repeated until you get to the number at the end. We can also indicate that the pattern carry’s on <em>ad-infinitum</em>:
+ C <script type="math/tex">\{1, 2, 3, ... \}</script>
+This notation is fairly intuitive, but it can become tedious to write and confusing to use. We’ll talk about more useful notation soon.</p>
+
+<p>Generally, we classify sets in two major groups: <em>finite sets</em> and <em>infinite sets</em>. The names are pretty self-explanatory. Finite sets have a finite set of elements, and infinite sets have an infinite set of elements. A and B above are finite sets. C is an infinite set. Now, we’ll talk about a couple of our favorite infinite sets.</p>
+
+<h4 id="common-sets">Common Sets</h4>
+
+<p>The first set I’d like to tell you about is the empty set, or the null set. This is a set with no elements. Every set with no elements is the same. We can write it like this <script type="math/tex">\{\}</script>, just a set of brackets without any elements, but more often it is written like this <script type="math/tex">\emptyset</script>. This is not to be confused with something like <script type="math/tex">\{\emptyset\}</script>, as this is not the empty set, but a set containing the empty set. As stupid as it sounds, these are two different things.</p>
+
+<p>Now, we’ll talk about the natural numbers, also called the counting numbers. They begin at one and continue by counting up by one infinitely. We can write this as:
+<script type="math/tex">\{1, 2, 3, ...\}</script>
+Or, if you want to save time and do what every reasonable person does, you use the symbol <script type="math/tex">\mathbb{N}</script>, which stands for the set of all natural numbers. When you see <script type="math/tex">\mathbb{N}</script>, you can read it as “the set of all natural numbers”. We also have the integers, which most people are familiar with. These include all the whole numbers and zero. We can define them like this:
+<script type="math/tex">\{...-2, -1, 0, 1, 2, ...\}</script>
+But, they have their own symbol, too. It is this fancy z, <script type="math/tex">\mathbb{Z}</script>. You may have also heard of the rational numbers, real numbers, and the complex numbers. Those use the symbols <script type="math/tex">\mathbb{Q}</script>, <script type="math/tex">\mathbb{R}</script>, and <script type="math/tex">\mathbb{C}</script>,  respectively.The rationals are all numbers that can be written as fractions. The reals are just, like, all the numbers or whatever. You’ll get a clearer explanation when we define them in a few paragraphs. The complex numbers include imaginary numbers, or numbers that use the square root of -1 (i), real numbers, and combinations of real and imaginary numbers. I now encourage you to attempt to define these three sets with set notation. Don’t scroll down and look at the answer, actually try.I’m in no hurry. Take your time.</p>
+
+<h4 id="set-builder-notation">Set Builder Notation</h4>
+<p>So, if you actually found a way to define the rationals, reals,  or complex numbers using only the notation I gave you above, then please send it to me (my email is bpost.brad@gmail.com). I’m geniunely interested. But, it is much easier to do if we give ourselves some more expressive notation. We call it set builder notation, and it allows us to build sets. It also draws upon some other mathematical notation, namely the symbols for qualifiers, so you may refer to that if you don’t already know it.</p>
+
+<p>So, say we want to define a set of all the even numbers greater than <script type="math/tex">0</script>. Well, we could do it like this:
+<script type="math/tex">\{2, 4, 6, ...\}</script>
+But, maybe we want to be more specific. Maybe, we want people to be sure what we are talking about, instead of just assuming that we mean even numbers greater than 1. Here’s how we do it:
+<script type="math/tex">\{x\;| x = 2n \,\,\,where\,\,\,  n \in \mathbb{N}\}</script>
+This gives us the set of all even numbers, but this may not be immediately obvious. Really, what ends up happening is we are constructing a mathematical sentence. The way that it starts is by saying “The set of all x’s…”. Whenever there are curly brackets, then we are constructing a set, and the first variable generally tells  us what we are calling our elements. Then we move on to the <script type="math/tex">|</script>. This translates to “such that”. Basically, it’s giving some condition the x’s have to follow. We can also write this as “:”. “|” and “:” are used interchangeably. I’ll be using “|” most of the time, but there are times where “:” makes things more readable. In any case, the x’s have to follow the condition that <script type="math/tex">x = 2n</script>. Here, we’re told that all of the x’s (elements) of our set must be equal to double some number <script type="math/tex">n</script>, where <script type="math/tex">n</script> is included in the set <script type="math/tex">\mathbb{N}</script>. The symbol <script type="math/tex">\in</script> is used to indicate that an element is a member of a set. So, <script type="math/tex">n \in \mathbb{N}</script>, indicates <script type="math/tex">n</script> must be a natural number. When we read this through, we get a sentence that says “The set of all x’s such that x = 2n where n is a natural number.” This is an equivalent set to all even numbers greater than zero. Every element in the set is given by multiplying a number equal to or greater than 1, and that gives us every even number. I encourage you to try to write the set of all odd numbers using set builder notation before we move on. It’s fairly similar.</p>
+
+<p>Did you do it? Cool. I’ll just give you a few more examples of some sets expressed in set builder notation:</p>
+
+<p>The set of all integers less than 0:
+<script type="math/tex">% <![CDATA[
+\{x \in \mathbb{Z} \;|\; x < 0\} %]]></script>
+Note: In this instance, we have specified that x is an integer before the <script type="math/tex">|</script>. This is because x’s type was not implied by our restrictions.</p>
+
+<p>The set of all real numbers not equal to pi:
+<script type="math/tex">\{ x \in \mathbb{R} \; | \; x \neq \pi\}</script></p>
+
+<p>The set of all square numbers:
+<script type="math/tex">\{x\;|\; x = n^2 \,\,\,where\,\,\, n \in \mathbb{Z}\}</script>
+Note: This one is interesting because squaring all the integers would give you 2 of every square number (positives and negatives both square to a positive), but since sets don’t repeat themselves those numbers are just dropped. You are allowed to have definitions that repeat values, if that makes sense. They just won’t be repeated in the set.</p>
+
+<p>Now I’ll reccommend that you try to define some sets with set builder notation. Here are some that you can try:</p>
+<ol>
+  <li>The set of all integers which are multiples of 3</li>
+  <li>The set of all numbers greater than 52, but less than 1,270,543</li>
+  <li>The set of all cubed numbers</li>
+  <li>The set of all numbers one less than a power of 2</li>
+</ol>
+
+<h4 id="defining-more-number-systems">Defining more number systems</h4>
+
+<p>Now that you have a feel for set builder notation, we can get to something a little more interesting, creating definitions for a more complicated number system. We’ll start with defining the set of all rational numbers. The rationals are really just numbers made from dividing integers by other integers. Knowing that, it’s not that hard. It isn’t a bad idea to try and do this on your own. There are multiple ways to define the set, but this is the way I like to do it:
+<script type="math/tex">\{x \;|\; x = \frac{y}{z} \,\,\, where \,\,\, y, z \in \mathbb{Z}\}</script>
+So, if we decode this to a verbal form, then we have “The set of all numbers <script type="math/tex">x</script> such that <script type="math/tex">x</script> is equal to <script type="math/tex">\frac{y}{z}</script> where y and z are integers.”
+We can do something similar for the real numbers, but it’s actually a lot more involved. A definition of the reals that achieves sufficient mathematical rigor only came about fairly recently (around the same time math got broken by Russel). I’ll write about how we do that somewhere else. But, if we take the reals for granted, it isn’t very hard to define the complex numbers. The first thing we have to do is let <script type="math/tex">\sqrt{-1} = i</script>. Since the complex numbers are all a sum of real and imaginary parts, then we have:
+<script type="math/tex">\{c \; | \; c = a + bi \,\,\, where \,\,\, a, b \in \mathbb{R}\}</script>
+At this point, I think you can probably start figuring what these set builder definitions mean on your own.</p>
+
+<h4 id="subsets">Subsets</h4>
+<p>You may be asking yourself, “Some of these sets are pretty big, I wish I could just have a little part of them.” You’re in luck, we don’t have make all of our sets based on giant infinite sets. Instead, we have these useful objects we call <em>subsets</em>. An observant reader would be able to think of some subsets based on what we have already. But, how do we write that down? Like this:
+<script type="math/tex">\mathbb{N} \subset \mathbb{Z}</script>
+This says that the natural numbers are a subset of the integers. This is intuitively obvious, as every natural number is included in the integers. Another symbol that comes up a lot is <script type="math/tex">\subseteq</script>. This indicates that a set is a subset of another set, or the two sets are equivalent. Mathematicians like to use this one a lot, because sometimes they aren’t sure whether a set has some of the elements in another set, or all of them. Of course, it’s perfectly legal to write:
+<script type="math/tex">\mathbb{N} \subseteq \mathbb{Z}</script>
+But, a more illustrative example occurs if I define some new sets. Let A be a set where we know all it’s elements are integers. Let a set B be given by <script type="math/tex">B = \{x \in A | x = 2n \,\,\, where \,\,\, n \in \mathbb{Z}\}</script>. Then we know <script type="math/tex">B \subseteq A</script>, but we can’t say for sure that <script type="math/tex">B \subset A</script>. Can you see why? Right. Because A may or may not be made up entirely of even integers. When we talk about these symbols, we would say “B is a subset of A” either way. But, in the first case, we can “<script type="math/tex">\mathbb{N}</script> is a <em>proper</em> subset of <script type="math/tex">\mathbb{Z}</script>. A fun thing that every math teacher writes on the board whenever they teach subsets is this statement:
+<script type="math/tex">\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R} \subset \mathbb{C}</script></p>
+
+<p>There’s a lot more to know about sets, but this page isn’t about teaching everything about set theory. I’ll give you more information about it somewhere else.</p>
+
+<h2 id="quantifiers">Quantifiers</h2>
+<p>Quantifiers were invented by mathematicians so they wouldn’t have to write a bunch of words down when they were explaining things. At first, most people find them to be a little strange, but after you get used to them they make life a lot easier. There are two important ones: <script type="math/tex">\exists</script> and <script type="math/tex">\forall</script>. <script type="math/tex">\exists</script> means “there exists”, and we call it the <em>Existential Quantifier</em>. <script type="math/tex">\forall</script> means “for all” or “for every”, and we call it the <em>Universal Quantifier</em>. Basically, we can use these to make more interesting mathematical statements. For example we can write things like <script type="math/tex">\forall x \in \mathbb{Q} \,\,\, where \,\,\, x \neq 0 \;\; then \exists y \in \mathbb{Q} such that \frac{x}{y} = 1</script>. Basically, we’ve got a statement that says every rational number other than <script type="math/tex">0</script> can be divided by another rational number so that you get <script type="math/tex">1</script>. We can put a slash through <script type="math/tex">\exists</script> too, so we have <script type="math/tex">\not \exists</script> (“there does not exist”). <script type="math/tex">\not \forall</script> doesn’t really come up, because it pretty much means “The opposite pf the following statement is true for all…”, and that’s kind of clunky to work with.</p>
+
+<p>Often times, the english words in the statements will get left out. For the statement above, we could simply write:
+<script type="math/tex">\forall x \in \mathbb{Q},\; x \neq 0, \; \exists y \in \mathbb{Q}, \frac{x}{y} = 1</script>
+This has an identical meaning, but is a little harder to read right off the bat. Instead of commas, you may also see parentheses:
+<script type="math/tex">(\forall x \in \mathbb{Q}) (x \neq 0) (\exists y \in \mathbb{Q}) \frac{x}{y} = 1</script>
+There’s a whole bunch of different ways to write this statement. Personally, I like to just write out the extra words in the interest of readability, so that’s what you’ll be seeing from me down the line.</p>
+
+<p>Here are some more examples. Try to write the mathematical statements in plain english. decide whether the statement is true or false:
+Let A be the set of all odd integers. <script type="math/tex">\forall x \in A,\; \exists n \in \mathbb{Z}\,\,\,such\:that\,\,\,x = 2n-1</script>.
+<script type="math/tex">\forall x \in \mathbb{R}, \; \exists y \in \mathbb{R} \,\,\, such\;that\,\,\, x=y^2</script>
+<script type="math/tex">\exists x \in mathbb{R}, \,\,\,such\;that\,\,\, \forall y \in mathbb{R}, \; x = y^2</script>
+<script type="math/tex">\forall x,y \in \mathbb{R},\; \exists z \in \mathbb{R} \,\,\,such\;that\,\,\, x^2 + y^2 = z</script>
+<script type="math/tex">\exists x, y, z \in mathbb{Z}\,\,\, such\;that\,\,\, x^2+y^2=z^2</script>
+<script type="math/tex">\forall x,y \in \mathbb{z},\; \exists z \in \mathbb{z} \,\,\,such\;that\,\,\, x^2 + y^2 = z^2</script></p>
+
+<p>If you understand the statements above, then you at least have a working understanding of the Existential and Universal Quantifier.</p>
+
+<h2 id="commonly-used-operations-functions-and-terms">Commonly Used Operations, Functions, and Terms</h2>
+
+<p>There are a lot of symbols, operations and functions used in math that someone without formal math knowledge might not recognize. You’ve probably heard of these things, and maybe seen them written in a different way, but this is how they are often addressed in proofs and mathematical texts.</p>
+
+<ol>
+  <li>Modulo</li>
+</ol>
+
+<p>Modulo basically just gives the remainder of a division problem. If you’ve done some programming, then you know about it. In math, we have some specific symbology. Let’s say we want to write that the remainder of 7 divided by 3 is equal to 1. It would look something like this:
+<script type="math/tex">1 \equiv 7 (\pmod 3)</script> or <script type="math/tex">1 \equiv 7 \mod 3</script>
+Sometimes people use the parentheses, sometimes they don’t. It’s a matter of preference. The triple line equal sign indicates congruence, as opposed to equivalence. This is a convention of modular arithemetic in math. We could also write something like:
+<script type="math/tex">6 \mod 5 \equiv 7 \mod 3</script>
+<script type="math/tex">\frac{6}{5}</script> has a remainder of 1, and <script type="math/tex">\frac{7}{3}</script> has a remainder of 1, so we can say they’re congruent. There’s a bit more to modular arithmetic, but I’m not going to cover that here.</p>
+
+<ol>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Divides: “</td>
+          <td>”</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ol>
+
+<table>
+  <tbody>
+    <tr>
+      <td>So, we talked about “</td>
+      <td>” when working with set builder notation above. But, the it also gets use as a symbol meaning “divisible by”. So, we can write something like $$ 3</td>
+      <td>6<script type="math/tex">. This means 3 divides 6 evenly (with no remainder). We can also write</script>3 \not</td>
+      <td>7<script type="math/tex">. This generally is only used in reference to integers, but it also comes up in reference to polynomials and some other mathematical objects. One more example:</script> x, y \in \mathbb{Z} \,\,\, where \,\,\, x=2y, \; then\,\,\, 2</td>
+      <td>x$$</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Ceiling “<script type="math/tex">\lceil\,\,\rceil</script>” and Floor “<script type="math/tex">\lfloor\,\,\rfloor</script>”</li>
+</ol>
+
+<p>The ceiling function gives the nearest integer greater than the input number. For example, <script type="math/tex">\lceil 2.01\rceil=3</script>. The floor function gives the nearest integer less than the input number. So, <script type="math/tex">\lfloor2.99\rfloor=2</script>.</p>
+
+<ol>
+  <li>Function Notation</li>
+</ol>
+
+<p>You’re probably used to seeing a function written as <script type="math/tex">f(x) = x</script>. But, to rigorously define a function, we also have to give the sets corresponding to its domain and codomain. So, we have a little more symbology. If we have a function <script type="math/tex">f</script> we want to map from a set <script type="math/tex">A</script> to a set <script type="math/tex">B</script> (when I say map, I mean that we give each element in the set <script type="math/tex">A</script> and value in the codomain <script type="math/tex">B</script>), we would write <script type="math/tex">f: A \rightarrow B</script>. Next, we would define our function. So, in total it looks something like this: <script type="math/tex">f:A\rightarrow B, f(x) = x</script>. If, for example, we wanted to map the real numbers to the real numbers, we would write: <script type="math/tex">f:\mathbb{R}\rightarrow\mathbb{R}, f(x) = x</script> (giving us the standard linear function we all know and love).</p>
+
+<ol>
+  <li>Function Composition $$(f\circg)(x)</li>
+</ol>
+
+<table>
+  <tbody>
+    <tr>
+      <td>The little circle is the symbol for function composition. It indicates that you take the output of the function to the right and pass it as the input of the function to the left. So, the input is from the domain of rightmost function, and the output is from the codomain of the leftmost function. Say we have two functions, one that maps from the integers to the positive square roots of the integers, called <script type="math/tex">g</script>, and one that maps from the positive square roots of the integers back to the integers, called <script type="math/tex">f</script>. The first thing we would do is define a set of the positive square roots of all the integers. We’ll call that set <script type="math/tex">S</script>, then $$S = {x \in \mathbb{R}</td>
+      <td>x = \sqrt{y}\,\,\forally\in\mathbb{Z}}<script type="math/tex">. Now, we can write the following functions:</script>f:S\rightarrow\mathbb{Z}, f(x)=x^2<script type="math/tex">and</script>g:mathbb{Z}\rightarrow S, g(x)=\sqrt{x}<script type="math/tex">. Using these we can define the function</script>f\circ g:\mathbb{Z}\rightarrow\mathbb{Z}, (f \circ g)(x) = (\sqrt{x})^2 = x<script type="math/tex">. Notice that we applied the rightmost function first, and the leftmost function second. We can do this for longer strings of functions. For example:</script>g\circ f \circ g:\mathbb{Z} \rightarrow S, (g\circ f \circ g)(x) = \sqrt{(\sqrt{x})^2}<script type="math/tex">, which you can probably tell is equivalent to</script>g$$. Notice how I have carefully defined the domains and codomains so that every element of the domain is used as an input, and the element of the codomain is used as an output. This is the standard for a proper function definition. Also, the unless given explicity, the square root function returns only positive values.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://github.com/jssomerville/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.snapchat.com/add/jessesomerville">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-snapchat fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Hackney.cool 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../../../../js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
