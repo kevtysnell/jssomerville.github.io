@@ -123,7 +123,7 @@ $$\frac{6}{5}$$ has a remainder of 1, and $$\frac{7}{3}$$ has a remainder of 1, 
 
 * Divides: "&#124;"
 
-So, we talked about "&#124;" when working with set builder notation above. But, the it also gets use as a symbol meaning "divisible by". So, we can write something like $$ 3$$ &#124; $$6$$. This means 3 divides 6 evenly (with no remainder). We can also write $$3 \not \vert 7$$. This generally is only used in reference to integers, but it also comes up in reference to polynomials and some other mathematical objects. One more example: $$ x, y \in \mathbb{Z} \,\,\, where \,\,\, x=2y, \; then\,\,\, 2 \vert x$$
+So, we talked about "&#124;" when working with set builder notation above. But, the it also gets use as a symbol meaning "divisible by". So, we can write something like $$ 3$$ &#124; $$6$$. This means 3 divides 6 evenly (with no remainder). We can also write $$3 \vert \not  7$$. This generally is only used in reference to integers, but it also comes up in reference to polynomials and some other mathematical objects. One more example: $$ x, y \in \mathbb{Z} \,\,\, where \,\,\, x=2y, \; then\,\,\, 2 \vert x$$
 
 * Ceiling "$$\lceil\,\,\rceil$$" and Floor "$$\lfloor\,\,\rfloor$$"
 
