@@ -117,9 +117,9 @@ There are a lot of symbols, operations and functions used in math that someone w
 #### Modulo
 
 Modulo basically just gives the remainder of a division problem. If you've done some programming, then you know about it. In math, we have some specific symbology. Let's say we want to write that the remainder of 7 divided by 3 is equal to 1. It would look something like this:
-$$1 \equiv 7 (\pmod 3)$$ or $$1 \equiv 7 \mod 3$$
+$$1 \equiv 7 \pmod 3$$ or $$1 \equiv 7 \mod 3$$
 Sometimes people use the parentheses, sometimes they don't. It's a matter of preference. The triple line equal sign indicates congruence, as opposed to equivalence. This is a convention of modular arithemetic in math. We could also write something like:
-$$6 \mod 5 \equiv 7 \mod 3$$
+$$6 \mod 5 \equiv 7 \mod 3$$. 
 $$\frac{6}{5}$$ has a remainder of 1, and $$\frac{7}{3}$$ has a remainder of 1, so we can say they're congruent. There's a bit more to modular arithmetic, but I'm not going to cover that here.
 
 #### Divides: "&#124;"
