@@ -103,7 +103,7 @@ Here are some more examples. Try to write the mathematical statements in plain e
 Let A be the set of all odd integers. 
 $$\forall x \in A,\; \exists n \in \mathbb{Z}\,\,\,such\:that\,\,\,x = 2n-1$$.
 $$\forall x \in \mathbb{R}, \; \exists y \in \mathbb{R} \,\,\, such\;that\,\,\, x=y^2$$
-$$\exists x \in mathbb{R}, \,\,\,such\;that\,\,\, \forall y \in mathbb{R}, \; x = y^2$$
+$$\exists x \in \mathbb{R}, \,\,\,such\;that\,\,\, \forall y \in \mathbb{R}, \; x = y^2$$
 $$\forall x,y \in \mathbb{R},\; \exists z \in \mathbb{R} \,\,\,such\;that\,\,\, x^2 + y^2 = z$$
 $$\exists x, y, z \in \mathbb{Z}\,\,\, such\;that\,\,\, x^2+y^2=z^2$$
 $$\forall x,y \in \mathbb{z},\; \exists z \in \mathbb{z} \,\,\,such\;that\,\,\, x^2 + y^2 = z^2$$
