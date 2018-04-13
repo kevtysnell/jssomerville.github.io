@@ -5,6 +5,7 @@ subheading: C Tier
 author: Kevin Snell
 banner-pic: kevins_kounsel.png
 categories: survivor
+published: false
 layout: post
 ---
 
